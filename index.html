@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+      <!-- Metadados -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Import Materialize CSS -->
+      <link rel="stylesheet" href="./materialize/css/materialize.css">
+
+      <!-- Import customizações -->
+      <link rel="stylesheet" href="./customs/css/index.css">
+
+      <!-- Import icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+      <!-- Import Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+      <!-- Título -->
+      <title>Portfólio Pessoal de Daniel Matos</title>
+
+  </head>
+  <body>
+    <!-- Header -->
+      <header>
+        <!-- Barra de Navegação -->
+          <nav id="navbar">
+              <div class="nav-wrapper">
+                <a tabindex="1" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i><span class="acessibility">Botão recolhido</span></a>  <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o menu é um botão recolhido. -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#home" tabindex="2">Início</a></li>
+                  <li><a href="#about" id="aboutNav" tabindex="3">Sobre mim</a></li>
+                  <li><a href="#skills" id="skillsNav" tabindex="4">Habilidades</a></li>
+                  <li><a href="#contacts" tabindex="5">Contatos</a></li>
+                  <li><a tabindex="6" href="#project" onclick="actionButtonProject();">Projetos</a></li>
+                </ul>
+              </div>
+          </nav>
+
+          <!-- Menu de Navegação Mobile -->
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#home" tabindex="2">Início</a></li>
+            <li><a href="#about" id="aboutNavMobile" tabindex="3">Sobre mim</a></li>
+            <li><a href="#skills" id="skillsNavMobile" tabindex="4">Habilidades</a></li>
+            <li><a href="#contacts" tabindex="5">Contatos</a></li>
+            <li><a tabindex="6" onclick="actionButtonProject();"  href="#project">Projetos</a></li>
+          </ul>
+      </header>
+
+      <!-- Main -->
+      <main> 
+          <!-- Início -->
+          <div class="container home">
+              <div class="row">
+                <div class="col s12 m12 l6">
+                  <!-- Informações e Botões Principais -->
+                  <div class="row">
+                    <div class="col l12">
+                      <h1 id="home">Daniel Zacarias de Matos</h1>
+                      <h2>Estudante de desenvolvimento Full-stack</h2>
+                      <p>Estudante de Desenvolvimento de Sistemas, com ênfase em Programação Web, aprimorando as competências para desenvolvimento completo de aplicações acessíveis e perfomáticas.</p>
+                    </div>     
+                  </div>  
+                  <!-- Botões Principais -->
+                  <div class="row button-group">
+                    <div class="col s12 m6 l6 button-about">
+                      <a id="button-about" onclick="actionButtonAbout()" href="#information" tabindex="7" class="button-select rigth waves-effect waves-light btn">SKILLS</a> 
+                    </div>
+                    <div class="col s12 m6 l6 button-project">
+                      <a id="button-project" onclick="actionButtonProject();" href="#project" tabindex="8" class="waves-effect waves-light btn project">PROJETOS</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l6 image">
+                  <img class="hide-on-med-and-down" src="images/static-website.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                </div>
+            </div>
+          </div>
+
+          <!-- Informações -->
+          <div class="container" id="information">
+              <h3 id="about">Sobre mim:</h3>
+              <p>Seja muito bem vindo(a) ao meu portfólio. Conheça um pouco da minha história:</p>
+              <div class="row">
+                <div class="col l12 experience">
+                  <img src="images/experience.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                  <p>Venho do segmento de hotelaria e turismo, resolvi mudar para a área de tecnologia em 2018.<br>Sempre fui interessado por tecnologia, hardware e games. Dei inicio aos estudos em desenvolvimento de sistemas pela instituição<a href="https://www.tecnicosenai.com.br/cursos/desenvolvimento-de-sistemas/" target="_blank" tabindex="9"> SENAI.</a><br>
+                     Atualmente estou finalizando o curso Dev-FullStack pela <a href="https://infinityschool.com.br" target="_blank" tabindex="10">Infinity School</a>,  buscando refinar alguns conhecimentos previamente adquiridos.
+                  </p>
+                </div>
+              </div>
+                <!-- Cards Habilidades -->
+                <div class="section abiliity">
+                    <h3 id="skills">Principais Habilidades:</h3>
+                    <div class="row">
+                      <!-- Card 1 -->
+                      <div class="col s12 m6 l3">
+                        <div class="card" tabindex="11">
+                          <div class="card-content white-text">
+                            <img src="images/html-icon.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                            <h4 class="card-title">HTML 5</h4>
+                            <p>Desenvolvimento de aplicações acessíveis, utilizando a tecnologia HTML 5 para elaboração de conteúdos para web com acessibilidade aplicada ao código.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Card 2 -->
+                      <div class="col s12 m6 l3">
+                        <div class="card" tabindex="12">
+                          <div class="card-content white-text">
+                            <img src="images/css-icon.svg" alt="">  <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                            <h4 class="card-title">CSS</h4>
+                            <p>Domínio do CSS para estilização de aplicações web visualmente bonitas, com responsividade aplicada, utilizando o media query.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card 3 -->
+                      <div class="col s12 m6 l3">
+                        <div class="card" tabindex="13">
+                          <div class="card-content white-text">
+                            <img src="images/javascript-icon.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                            <h4 class="card-title">JAVASCRIPT</h4>
+                            <p>Implementação do Javascript para manipulação de eventos, otimizações de tarefas e uso de funcionalidades para o comportamento do site.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card 4 -->
+                      <div class="col s12 m6 l3">
+                        <div class="card" tabindex="14">
+                          <div class="card-content white-text">
+                            <img src="images/materializecss-icon.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                            <img class="right" src="images/bootstrap-icon.svg" alt="">  <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                            <h4 class="card-title">FRAMEWORKS FRONT-END</h4>
+                            <p>Desenvolvimento de aplicações responsivas e estilizadas utilizando framework Materialize ou Bootstrap.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Cards Serviços -->
+                <div class="section services">
+                  <h3>Outras competências:</h3>
+                  <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col s12 m6 l6">
+                      <div class="card" tabindex="15">
+                        <div class="card-content white-text">
+                          <h4 class="center card-title">VERSIONAMENTO COM GIT</h4>
+                          <p>Domínio da ferramenta Git para hospedagem e versionamento de código e elaboração coletiva de projetos.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col s12 m6 l6">
+                      <div class="card" tabindex="16">
+                        <div class="card-content white-text">
+                          <h4 class="center card-title">FIGMA</h4>
+                          <p>Domínio prévio da plataforma Figma para desenvolvimento de web designs.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col s12 m6 l6">
+                      <div class="card" tabindex="17">
+                        <div class="card-content white-text">
+                          <h4 class="center card-title">USABILIDADE E UX</h4>
+                          <p>Conhecimentos das heurísticas e leis de UX aplicadas na área de Interações Homem-Computador.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col s12 m6 l6">
+                      <div class="card" tabindex="18">
+                        <div class="card-content white-text">
+                          <h4 class="center card-title">ACESSIBILIDADE</h4>
+                          <p>Estudos de aplicações acessíveis, utilizando documentação eMag como base teórica de estudo.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          
+          <!-- Projetos -->
+          <div class="container project secret" id="project">
+            <h3>Explore alguns projetos que já desenvolvi: </h3>
+            <!-- CARD 1 -->
+            <div class="card" tabindex="19">
+              <div class="card-content white-text">
+                <div class="row project-info">
+                  <div class="col s12 m12 l8 project-figure">
+                    <div class="center-align project-image">
+                      <img src="images/printscreenMariogame.png" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                    </div>
+                  </div>
+                  <div class="col s12 m12 l4">
+                      <h4 class="center card-title">Mario Js Game</h4>
+                      <p>Jogo com a temática do Super Mario, mas com a jogabilidade de jogos como Dino da Google, ou Flappy Bird.<br>Projeto de teste para mecânicas de manipulação dos elementos HTML com JavaScript.</p>
+                      <a target="_blank" tabindex="20" href="https://supermariojsgame.vercel.app/" class="waves-effect waves-light btn">VISITAR MARIO - GAME<span class="acessibility">(Link para um novo sítio.)</span></a>   <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                      <a target="_blank" tabindex="21" href="https://github.com/danielzmatos/supermariojsgame" class="waves-effect waves-light btn">REPOSITÓRIO MARIO GAME<span class="acessibility">(Link para um novo sítio.)</span></a>  <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                  </div>
+                </div>  
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card" tabindex="22">
+              <div class="card-content white-text">
+                <div class="row project-info">
+                  <div class="col s12 m12 l8 project-figure">
+                    <div class="center-align project-image">
+                      <img src="images/printscreenMarvelApi.png" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                    </div>
+                  </div>
+                  <div class="col s12 m12 l4">
+                      <h4 class="center card-title">Marvel Heroes Api</h4>
+                      <p>Aplicação web desenvolvida durante o curso da Infinity School, com foco na integração da API proprietária da Marvel para consultas diversas.</p>
+                      <a target="_blank" tabindex="23" href="https://marvel-api-brown.vercel.app/" class="waves-effect waves-light btn">VISITAR MARVEL @DZM API<span class="acessibility">(Link para um novo sítio.)</span></a>  <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                      <a target="_blank" tabindex="24" href="https://github.com/danielzmatos/Marvel-API-CSS" class="waves-effect waves-light btn">REPOSITÓRIO MARVEL @DZM API<span class="acessibility">(Link para um novo sítio.)</span></a>  <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer">
+        <div class="container" id="container">
+          <div class="row">
+            <h3 id="contacts">Como você pode entrar em contato comigo:</h3>
+            <div class="col s12 l12">
+              <ul>
+                <li>
+                    <div class="social-media">
+                      <a target="_blank" href="https://www.instagram.com/danielzmatos/" tabindex="25">
+                        <img src="images/instagram-icon.svg" alt="">  <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                        <p>Instagram <span class="acessibility">(Link para um novo sítio.)</span></p>  <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                      </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="social-media">
+                      <a href="mailto:danieldiasleme@gmail.com" target="_blank" tabindex="26">
+                        <img src="images/email-icons.svg" alt="Email"> <!-- Por quetões de acessibilidade, o alt informa ao leitor de tela que o link é um email -->
+                        <p>danieldiasleme@gmail.com</p> <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia- e informa o email -->
+                      </a>
+                    </div>
+                  </li>
+                <li>
+                  <div class="social-media">
+                    <a href="https://github.com/danielzmatos" target="_blank" tabindex="27">
+                      <img src="images/github-icon.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                      <p>Github<span class="acessibility">(Link para um novo sítio.)</span></p> <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                    </a>
+                  </div>
+                </li>
+                <li>
+                    <div class="social-media">
+                      <a href="https://www.linkedin.com/in/daniel-z-matos-0b6993147/" target="_blank" tabindex="28">
+                        <img src="images/linkedin-icon.svg" alt=""> <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+                        <p>Linkedin<span class="acessibility">(Link para um novo sítio.)</span></p> <!-- Por questões de acessibilidade, o span oculto informa ao leitor que o link será aberto em uma nova guia -->
+                      </a>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright center-align">
+          <div class="container">
+            <div class="footer-btn">
+              <a id="button-footer" onclick="actionButtonProject();" class="waves-effect waves-light btn" tabindex="29" href="#project">VISUALIZAR PROJETOS</a> 
+            </div>
+            <div class="buttonTop">
+              <a class="rigth" href="#navbar">Ir ao topo da página</a>  <!-- Âncora para Acessbilidade. -->
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Decoração -->
+      <div class="elipse">
+        <img src="images/elipse.svg" alt="">  <!-- Alt nulo por questões de acessibilidade, com o intuito do leitor de tela ignorar imagens decorativas. -->
+      </div>
+
+      <!-- Scripts -->
+      <script src="./materialize/js/materialize.js"></script>
+      <script src="./customs/js/index.js"></script>
+  </body>
+</html>

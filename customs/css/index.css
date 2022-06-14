@@ -1,0 +1,440 @@
+/* Variáveis globais */
+:root{
+    --dark-color: #333;
+    --text-color: #FFFFFF;
+    --text-hover-color: #629CE0;
+    --body-color: #333;
+    --title-color: #F5F5F5;
+    --blue-color: #629CE0;
+}
+
+/* Propriedades gerais para o html */
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+/* Seletor universal */
+*{
+    font-family: "Poppins", sans-serif;
+    /* Personalização da scrollbar no Firefox */
+    scrollbar-width: thin;  
+    scrollbar-color: var(--blue-color) var(--dark-color);
+}
+/* ------------------------------------------------------------ */
+
+/* Propriedades para o body */
+body{
+    background-color: var(--body-color);
+    position: relative;
+}
+/* ---------------------------------------*/
+
+/* Personalização da scroolbar com motores webkit */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+  
+body::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    border: none;
+}
+/* ------------------------------------------------ */
+
+/* Propriedades barra de navegação */
+nav{
+    background-color: var(--dark-color);
+    padding: 0 2rem;
+}
+/* ------------------------------------------*/
+
+/* Personalização das opções da barra de navegação, contatos do rodapé e do botão de voltar ao topo */
+nav ul li a, .social-media p, .buttonTop a{
+    color: var(--text-color);
+    transition: ease-in 0.3s all;
+}
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Efeitos de visualização ao passar o mouse */
+nav ul li a:hover, .buttonTop a:hover{
+    color: var(--text-hover-color);
+}
+/* ------------------------------- */
+
+/* Propriedade para tamanho do container */
+.container{
+    width: 80%;
+}
+/* ------------------------------- */
+
+/* Propriedades para a imagem do início da página */
+.home img{
+    width: 100%;
+}
+/* ---------------------------------------------- */
+
+/* Propriedades para os títulos */
+h1{
+    color: var(--title-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+h3{
+    color: #629CE0;
+    font-weight: 700;
+    border-left: 5px solid var(--blue-color);
+    padding: 5px;
+    font-size: 1rem;
+}
+/* ------------------------------- */
+
+/* Propriedades para os subtítulos e parágrafos */
+p, .card .card-content .card-title{
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.card .card-content .card-title{
+    margin-top: 0;
+}
+
+/* --------------------------------------------- */
+
+/* Propriedades para os botões da página */
+.btn, .footer-btn a{
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+    border: solid 2px var(--blue-color);
+    border-radius: 10px;
+    background: transparent;
+    height: 40px;
+    width: 100%;
+}
+
+.button-group .button-about a{
+    margin-bottom: 10px;
+}
+/* ---------------------------------- */
+
+/* Propriedades para o botão de visualizar projetos no rodapé */
+.footer-btn a{
+    width: fit-content;
+}
+/* ---------------------------------------------------------- */
+
+/* Propriedade para os botões dos projetos */
+.project .btn{
+    margin-top: 10px;
+}
+/* --------------------------------------- */
+
+/* Efeitos de visualização para os botões */
+.btn:hover, .footer-btn a:hover{
+    background-color: var(--blue-color);
+}
+
+.btn:focus{
+    outline: 2px solid white;
+}
+/* --------------------------------------- */
+
+/* Propridades parágrafo sobre as experiências */
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.experience img{
+    width: 60px;
+}
+/* -------------------------------------------- */
+
+/* Propriedades para as seções de cards */
+.abiliity .card, .services .card{
+    background-color: var(--blue-color);
+    transition: ease-in 0.3s all;
+    border-radius: 15px;
+    border: solid 1px var(--blue-color);
+    cursor: pointer;
+}
+
+.abiliity .card img{
+    width: 40px;
+}
+
+/* -------------------------------------- */
+
+/* Propriedades para os card da seção de serviços */
+.services .card{
+    background-color: transparent;
+}
+
+.services .card img{
+    width: 30px;
+}
+/* ---------------------------------------------- */
+
+/* Efeito de visualização para os cards */
+.abiliity .card:hover{
+    background-color: transparent;
+}
+
+.services .card:hover{
+    background-color: var(--blue-color);
+}
+
+.abiliity .card:focus{
+    background-color: transparent;
+}
+
+.services .card:focus{
+    background-color: var(--blue-color);
+}
+/* -------------------------------------------- */
+
+/* Personalização do rodapé */
+.page-footer{
+    background-color: transparent;
+}
+/* ------------------------------- */
+
+/* Propriedades para a lista de contatos no rodapé */
+.page-footer .container .row ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* ------------------------------------------------*/
+
+/* Propriedades para as redes de contato no rodapé */
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    transition: 0.3s ease-in all;
+    width: fit-content;
+}
+
+.social-media img{
+    width: 20px;
+}
+/* ----------------------------------------------- */
+
+/* Elementos ocultos por questões de Acessibilidade */
+.acessibility{
+    position: absolute;
+    left: -999em;
+}
+/* --------------------- */
+
+/* Efeitos de visualização ao passar o mouse */
+.social-media a:hover{
+    transform: scale(1.2);
+}
+/* ------------------------------------------ */
+
+/* Personalização da seção do botão de visualizar projetos no rodapé */
+.page-footer .footer-copyright{
+    background-color: var(--dark-color);
+}
+/* ----------------------------------------------------------------- */
+
+/* Propriedades para o elipse de decoração da página */
+.elipse{
+    position: fixed;
+    top: 80%;
+    right: 0;
+    z-index: -1;
+}
+/* -------------------------------------------------- */
+
+/* Propriedades para o botão de voltar ao topo da página */
+.buttonTop{
+    margin: 10px 0;
+}
+/* ---------------------------------------------------- */
+
+/* Propriedade para os cards dos projetos */
+ .project .card{
+    background-color: rgba(113, 113, 115, 0.107);
+}
+
+.project .card .card-content .card-title{
+    color: var(--blue-color);
+    font-weight: 700;
+ }
+
+.project .card .card-content p{
+    font-weight: 400;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project .card,  .project-image img{
+    border-radius: 10px;
+}
+/* -------------------------------------------*/
+
+/* Propriedades para ocultar seções em eventos Javascript */
+.secret{
+    display: none;
+}
+
+#mobile-demo .secret{
+    display: none;
+}
+/* ------------------------------------------- */
+
+/* Propriedades para focar botões em eventos Javascript */
+.button-select, .footer-btn .button-select{
+    background-color: var(--blue-color);
+}
+/* ------------------------------------------- */
+
+/* Responsividade */
+@media only screen and (min-width: 993px) {
+    /* Propriedades para o tamanho dos cards */
+    .abiliity .card{
+        height: 300px;
+    }
+
+    .services .card{
+        height: 150px;
+    }
+    /* -------------------------------------- */
+
+    .home{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Propriedade para navegação acessível utilizando o tab */
+    #mobile-demo, sidenav-trigger{
+        display: none;
+    }
+    /* -------------------------------------- */
+
+    /* Propriedades para os elementos dos cards dos projetos */
+    .project-info{
+        display: flex;
+        align-items: center;
+    }
+    /* ----------------------------------------------------- */
+}
+
+@media only screen and (max-width: 1145px){
+    /* Propriedade para o tamanho dos parágrafos de acordo com a tela*/
+    p{
+        font-size: 0.8rem;
+    }
+    /* -------------------------------------- */
+}
+
+@media only screen and (max-width: 993px) {
+    /* Propriedades para o tamanho dos cards */
+    .abiliity .card{
+        height: 230px;
+    }
+
+    .services .card{
+        height: 140px;
+    }
+    /* -------------------------------------- */
+
+    /* Propriedade para o responsividade de texto */
+    html{
+        font-size: 14px;
+    }
+    /* -------------------------------------- */
+
+    /* Propriedade para navegação acessível utilizando o tab */
+    .nav-mobile{
+        display: none;
+    }
+    /* ------------------------------------------------------*/
+
+    /* Propriedades para o elipse de decoração da página */
+    .elipse{
+        top: 90%;
+    }
+    /* -------------------------------------------------- */
+}
+
+@media only screen and (min-width: 820px){
+    /* Propriedades para os elementos dos cards dos projetos */
+    .project-info{
+        display: flex;
+        align-items: center;
+    }
+    /* ----------------------------------------------------- */
+}
+
+@media only screen and (max-width: 640px){
+    /* Propriedade para o responsividade de texto */
+    html{
+        font-size: 13px;
+    }
+    /* -------------------------------------- */
+}
+
+@media only screen and (max-width: 600px){
+    /* Propriedade para o responsividade de texto */
+    html{
+        font-size: 16px;
+    }
+    /* -------------------------------------- */
+
+    /* Propriedades para o tamanho dos cards */
+    .abiliity .card{
+        height: fit-content;
+    }
+
+    .services .card{
+        height: fit-content;
+    }
+
+    .page-footer ul{
+        flex-direction: column;
+    }
+    /* -------------------------------------- */
+
+    /* Propriedades para os elementos dos cards dos projetos */
+    .project-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-figure{
+        order: 2;
+        margin-top: 15px;
+    }
+    /* ------------------------------------------------------ */
+}
+/* -------------------------------------------- */
